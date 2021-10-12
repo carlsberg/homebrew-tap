@@ -1,10 +1,10 @@
-# Crqra Tap
+# Carlsberg Tap
 
 ## How do I install these formulae?
 
-`brew install crqra/tap/<formula>`
+`brew install carlsberg/tap/<formula>`
 
-Or `brew tap crqra/tap` and then `brew install <formula>`.
+Or `brew tap carlsberg/tap` and then `brew install <formula>`.
 
 ## Documentation
 
