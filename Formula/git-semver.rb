@@ -5,21 +5,21 @@
 class GitSemver < Formula
   desc "Git extension to easily manage your project's version based on Semantic Versioning and Conventional Commits"
   homepage "https://github.com/carlsberg/git-semver"
-  version "0.6.1"
+  version "0.6.2"
   license "MIT"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/carlsberg/git-semver/releases/download/v0.6.1/git-semver_0.6.1_Darwin_x86_64.tar.gz"
-      sha256 "5990a871b1e29ff04257bc266142fbf2731686511590e126f964b7c76e6299a8"
+    if Hardware::CPU.arm?
+      url "https://github.com/carlsberg/git-semver/releases/download/v0.6.2/git-semver_0.6.2_Darwin_arm64.tar.gz"
+      sha256 "cdd72b915a8f09145332b1badef5dca3f9ac4772535c941e1bf51b3b5a3690c7"
 
       def install
         bin.install "git-semver"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/carlsberg/git-semver/releases/download/v0.6.1/git-semver_0.6.1_Darwin_arm64.tar.gz"
-      sha256 "b540397381e5b49ec2527bded10513ee14f5f487d1b74940e9277cd6a54047ec"
+    if Hardware::CPU.intel?
+      url "https://github.com/carlsberg/git-semver/releases/download/v0.6.2/git-semver_0.6.2_Darwin_x86_64.tar.gz"
+      sha256 "0d1e4f50caf7847693c48955a0282926595cd523e6363e6fe7cf245dbb685a86"
 
       def install
         bin.install "git-semver"
@@ -29,16 +29,16 @@ class GitSemver < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/carlsberg/git-semver/releases/download/v0.6.1/git-semver_0.6.1_Linux_x86_64.tar.gz"
-      sha256 "bcd09fb992033a1fcfb23d8f4001a8908d2c23b7e1218d6b564288dec2efff8c"
+      url "https://github.com/carlsberg/git-semver/releases/download/v0.6.2/git-semver_0.6.2_Linux_x86_64.tar.gz"
+      sha256 "64e5d466afcb8073e4035fc4c050a011d401d01db40487918afeeae8ab0935da"
 
       def install
         bin.install "git-semver"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/carlsberg/git-semver/releases/download/v0.6.1/git-semver_0.6.1_Linux_arm64.tar.gz"
-      sha256 "1f17ea065a4223aa6a4afb78c0f57b9b8d34b63372348a08503bad9f773f0e1f"
+      url "https://github.com/carlsberg/git-semver/releases/download/v0.6.2/git-semver_0.6.2_Linux_arm64.tar.gz"
+      sha256 "f93871613ef4c73c8247a9b392627dffe235f040b7bc6e6e2967b4c69f505384"
 
       def install
         bin.install "git-semver"
